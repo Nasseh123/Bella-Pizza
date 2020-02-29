@@ -50,3 +50,23 @@ nav li{
 nav a:hover{
     color: bisque;
 } */
+.about{
+    background-image: url(../images/abstract-ancient-antique-art-235985.jpg);
+    
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    
+}
+.ab{
+    text-align: center;
+}
+.ima{
+    float: left;
+    height: 600px;
+}
+#abd{
+    text-align: center;
+     margin-top: 150px;
+     padding-bottom: 300px;
+}
