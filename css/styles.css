@@ -21,7 +21,7 @@
     padding-bottom: 50px;
 }
 
-/* .rot{
+.rot{
     animation: rotation 7s infinite linear;
 }
 @keyframes rotation {
@@ -31,7 +31,7 @@
     to {
       transform: rotate(359deg);
     }
-  } */
+  }
   /* nav {
     display: inline-block;
     background-color: rgb(199, 43, 43);
@@ -56,6 +56,7 @@ nav a:hover{
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
+    background-attachment: fixed;
     
 }
 .ab{
@@ -64,9 +65,51 @@ nav a:hover{
 .ima{
     float: left;
     height: 600px;
+    background-attachment: fixed;
 }
 #abd{
     text-align: center;
      margin-top: 150px;
-     padding-bottom: 300px;
+      padding-bottom: 400px;
+     
+}
+.men{
+    background-image: url(../images/close-up-of-wooden-plank-326311.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: rgb(212, 209, 209) ;
+}
+.box{
+        position: relative;
+        display: inline-block; /* Make the width of box same as image */
+    }
+    .box .box1{
+        font-weight: 900;
+        font-size: 30px;
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;        
+        text-align: center;
+        top: 5%; /* Adjust this value to move the positioned div up and down */
+        background: none;
+        font-family: Arial,sans-serif;
+        color: rgb(212, 209, 209);
+        width: 60%; /* Set the width of the positioned div */
+    }
+.menImg{
+    opacity: 0.9;
+}
+.foo{
+    background-repeat: no-repeat;
+    
+}
+.fooima{
+    height:200px;
+    /* padding-right: -20px;
+    padding-left: -20px; */
 }
