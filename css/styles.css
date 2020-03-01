@@ -110,6 +110,38 @@ nav a:hover{
 }
 .fooima{
     height:200px;
-    /* padding-right: -20px;
-    padding-left: -20px; */
+    
+}
+.contact{
+    background-image: url(../images/contactus.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    padding-top: 20px;
+
+}
+.validate{
+    padding-top: 200px;
+}
+.order{
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    padding-top: 20px;
+
+}
+ .order{
+    display: none;
+} 
+ .veggie{
+    display: none;
+} 
+.zoom{
+    transition: transform .2s;
+}
+.zoom :hover{
+    transform: scale(1.5);
+}
+.btn{
+    background-color: brown;
 }
