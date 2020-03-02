@@ -251,3 +251,6 @@ nav a:hover{
     text-align: center;
     margin-left: 40%;
 }
+.defaultPrize{
+    display: none;
+}
