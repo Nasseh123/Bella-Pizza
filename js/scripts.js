@@ -40,6 +40,11 @@ function ready() {
         var button=addToCartButtons[i]
         button.addEventListener('click',addToCartClicked)
     }
+    var addToCartButtons2=document.getElementsByClassName('sizez')
+    for (var i = 0; i < addToCartButtons2.length; i++) {
+        var button=addToCartButtons2[i]
+        button.addEventListener('click',addToCartClicked2)
+    }
 }
 function removeCartItem(event){
     var buttonClicked = event.target
@@ -61,7 +66,19 @@ function addToCartClicked(event){
     var price=shopItem.getElementsByClassName('defaultPrize')[0].innerText
     var imgSrc=shopItem.getElementsByClassName('fooima')[0].src
     console.log(title,price)
+    addItemToCart(title,price,imgSrc)
 
+}
+function addToCartClicked2(event){
+    var button=event.target
+    var shopItem=button.parentElement
+    var price=shopItem.getElementsByClassName('prizecart')[0].innerText
+    console.log(price)
+    // addItemToCart(title,price,imgSrc)
+
+}
+function addItemToCart(title,price,imgSrc){
+    var cartRow=document.createElement('div')
 }
 
 
