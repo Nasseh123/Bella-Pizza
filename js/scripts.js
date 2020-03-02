@@ -74,15 +74,19 @@ function addToCartClicked2(event){
     var shopItem=button.parentElement
     var price=shopItem.getElementsByClassName('prizecart')[0].innerText
     console.log(price)
+    addItemToCart(price)
     // addItemToCart(title,price,imgSrc)
 
 }
 function addItemToCart(title,price,imgSrc){
     var cartRow=document.createElement('div')
+    cartRow.innerText=title
+    var cartItems=document.getElementsByClassName('cart-items')[0]
+    cartItems.append(cartRow)
 }
 
 
-// WHOLE CODEE!!1
+//wertyhgjhgfdsdfgbv
 
 function updateCartTotal() {
     var cartItemContainer = document.getElementsByClassName("cart-items")[0]
