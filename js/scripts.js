@@ -45,8 +45,18 @@ function ready() {
         var button = addToCartButtons2[i]
         button.addEventListener('click', addToCartClicked2)
     }
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click',purchaseClicked)
 }
+//Purchase button ...
+function purchaseClicked(){
+    alert('Thank you for your purchase')
+    var cartItems=document.getElementsByClassName('cart-items')[0]
+    while(cartItems.hasChildNodes()){
+        cartItems.removeChild(cartItems.firstChild)
+    }
+    updateCartTotal()
 
+}
 function removeCartItem(event) {
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
