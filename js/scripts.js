@@ -14,7 +14,7 @@ $(document).ready(function () {
     $(".cho").click(function () {
         $(".choos").hide();
     });
-    $(".btn-delivery").click(function(){
+    $(".btn-delivery2").click(function(){
         $(".car").toggle(1200);
     })
     $(".btn-purchase").click(function(){
@@ -71,7 +71,7 @@ function ready() {
 //Purchase button ...
 function purchaseClicked(){
     // alert(price)
-    alert('Thank you for your purchase'+"\n your totla is ksh 1000")
+    alert('Thank you for your purchase'+"")
     var cartItems=document.getElementsByClassName('cart-items')[0]
     while(cartItems.hasChildNodes()){
         cartItems.removeChild(cartItems.firstChild)
@@ -101,15 +101,15 @@ function addToCartClicked(event) {
     var imgSrc = shopItem.getElementsByClassName('fooima')[0].src
     console.log(title, price)
     addItemToCart(title, price, imgSrc)
-    updateCartTotal()
+    updateCartTotal() 
 
 }
 function toppingsAdd(event) {
     var button = event.target
     var shopItem = button.parentElement.parentElement
     var title = shopItem.getElementsByClassName('titles')[0].innerText
-    alert(title)
-    var price = document.getElementsByClassName('priceHead')[0].innerText
+   // alert(title)
+    var price = shopItem.getElementsByClassName('priceHead')[0].innerText
     // alert(price)
     console.log(title, price)
     addItemToCart2(title, price)
@@ -118,9 +118,9 @@ function toppingsAdd(event) {
 }
 function deliveryAddition(event) {
     var button = event.target
-    var shopItem = button.parentElement.parentElement
+    var shopItem = button.parentElement
     var title = shopItem.getElementsByClassName('menuTitl')[0].innerText
-    alert(title+"Why!!")
+    //alert(title+"Why!!")
     var price = shopItem.getElementsByClassName('defaultPrize')[0].innerText
     console.log(title, price)
     addItemToCart3(title, price)
