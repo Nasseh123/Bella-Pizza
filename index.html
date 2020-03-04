@@ -13,10 +13,13 @@
         <a class="navbar-brand" href="#">Home</a>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT</a>
+                <a class="nav-link" href="#about">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">CHECKOUT</a>
+                <a class="nav-link" href="#menu">MENU</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
             </li>
         </ul>
     </nav>
@@ -24,7 +27,9 @@
     <div class="container-fluid land">
 
         <div id="pn">
+            <h2>BELLA DIVINO PIZZA PALACE</h2>
             <img src="images/pizza.png" alt="pizza" class="rot">
+            <p>We are simply the best!!</p>
 
         </div>
         <div id="pn1">
@@ -33,8 +38,8 @@
         </div>
     </div>
     <!-- ABOUT US SECTION -->
-    <div class="container-fluid about">
-        <h2 class="ab">ABOUT US </h2>
+    <div class="container-fluid about" id="about">
+        <h2 class="ab" id="about">ABOUT US </h2>
         <img src="images/cheese-pizza-2762942.jpg" alt="" class="ima">
         <p id="abd">On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would
             <br>
@@ -47,7 +52,7 @@
 
     </div>
     <!-- OUR MENU -->
-    <div class="container-fluid men">
+    <div class="container-fluid men" id="menu">
         <h2>MENU</h2>
         <div class="box">
             <img src="images/pizza2.png" alt="PIZZA SLICE" class="menImg">
@@ -59,19 +64,25 @@
         </div>
         <!-- FOOD -->
         <div class=" container foo">
-            Bella Divino Pizza has a wide selection of gourmet meat, veggie, and vegan pizzas. You can even design your
+           <p> Bella Divino Pizza has a wide selection of gourmet meat, veggie, and vegan pizzas. You can even design your
             own.
-            All our pizzas are available Gluten-free.
+            All our pizzas are available Gluten-free</p>
+            <h5 class="tr">Select Your Desired Pizza Type below:...</h5>
 
-            <div class="row">
-                <div class="col-md-12 zoom  ">
+            <div class="row ">
+            
+                    <div class="col-md-6 zoom">
+                        <h4>MEAT</h4>
+                        <img src="images/menu/meatpizza.jpg" alt="" class="fooima clickable">
+                       
 
-                    <img src="images/menu/meatpizza.jpg" alt="" class="fooima clickable">
-                    <img src="images/menu/veggiepizza.jpg" alt="" class="fooima veg">
+                    </div>
+                    <div class="col-md-6 zoom">
+                        <h4>VEGGIES</h4>
+                        <img src="images/menu/veggiepizza.jpg" alt="" class="fooima veg">
+                        
 
-
-                </div>
-
+                    </div>
 
             </div>
 
@@ -151,7 +162,7 @@
 
                 <button class=" order-btn btn btn-primary cho">ORDER</button>
 
-            </div>
+            </div>id="about 
 
 
 
@@ -218,7 +229,7 @@
                 <span class=defaultPrize>Ksh1000</span>
                 <button class="order-btn btn btn-primary cho">ORDER</button>
 
-
+                id="about
 
             </div>
             <div class="card col-md-6">
@@ -273,36 +284,42 @@
                     <h3>Select your Desired Crust</h3>
 
                     <div>
-                        <p class="titles">CRISPY </p>
+                        <p class="titles">CRISPY <span class="tt">(Crust)</span> </p>
+                        <span class="priceHead">Ksh100</span>
 
-                        <button class="tops priceHead btn btn-primary">Ksh100</button>
+                        <button class="tops btn btn-primary">Ksh100</button>
                     </div>
                     <div>
-                        <p class="titles">STUFFED </li">
+                        <p class="titles">STUFFED<span class="tt">(Crust)</span>  </li">
+                            <span class="priceHead">Ksh100</span>
 
-                            <button class="tops priceHead btn btn-primary">Ksh200</button>
+                            <button class="tops  btn btn-primary">Ksh200</button>
                     </div>
                     <div>
-                        <p class="titles">Gluffin </li">
+                        <p class="titles">Gluffin<span class="tt">(Crust)</span>  </li">
+                            <span class="priceHead">Ksh100</span>
 
-                            <button class="tops priceHead btn btn-primary">Ksh300</button>
+                            <button class="tops  btn btn-primary">Ksh300</button>
                     </div>
                     <H3>Select your desired toppings</H3>
 
                     <div>
-                        <p class="titles">CRUST </li">
+                        <p class="titles">CRUST <span class="tt">toppings</span> </li">
+                            <span class="priceHead">Ksh100</span>
 
-                            <button class="tops priceHead btn btn-primary">Ksh400</button>
+                            <button class="tops btn btn-primary">Ksh400</button>
                     </div>
                     <div>
-                        <p class="titles">THICK </li">
+                        <p class="titles">THICK <span class="tt">toppings</span> </li">
+                            <span class="priceHead">Ksh100</span>
 
-                            <button class="tops priceHead btn btn-primary">Ksh500</button>
+                            <button class="tops btn btn-primary">Ksh500</button>
                     </div>
                     <div>
-                        <p class="titles">Gluten</li">
+                        <p class="titles">Gluten <span class="tt">toppings</span></li">
+                            <span class="priceHead">Ksh100</span>
 
-                            <button class="tops priceHead btn btn-primary">Ksh600</button>
+                            <button class="tops  btn btn-primary">Ksh600</button>
 
 
                     </div>
@@ -377,7 +394,8 @@
 
 
         <!-- CONTACT US SECTION -->
-        <DIV class="contact">
+        <DIV class="contact" id="contact">
+            <H2><u>CONTACT US</u></H2>
             <!-- Begin Mailchimp Signup Form -->
             <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
             <!-- <style type="text/css">
@@ -390,7 +408,7 @@
                 /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
             </style> -->
-            <div id="mc_embed_signup">
+            <div id="mc_embed_signup cont">
                 <form
                     action="https://gmail.us4.list-manage.com/subscribe/post?u=6d39a89ecb6351cba4bc6fe5f&amp;id=57f04899e1"
                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"

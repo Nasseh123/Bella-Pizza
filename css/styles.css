@@ -15,9 +15,19 @@
     
     
 }
+#pn h2{
+    font-weight: 900;
+    color: white;
+    font-size:40px;
+}
+#pn p{
+    font-weight: 900;
+    color: white;
+    font-size: 30px;
+}
 #pn1{
     text-align: center;
-    padding-top:400px;
+    padding-top:350px;
     padding-bottom: 50px;
 }
 
@@ -116,8 +126,8 @@ nav a:hover{
     background-image: url(../images/contactus.jpg);
     background-repeat: no-repeat;
     position: relative;
-    background-size: cover;
-    padding-top: 20px;
+    background-size: cover;    
+    text-align: center;
 
 }
 .validate{
@@ -256,11 +266,31 @@ nav a:hover{
     display: none;
 }
 .priceHead{
-    display: non;
+    display: none;
+}
+.tt{
+    display: none;
 }
 .btn-delivery{
 margin-top:10px;
 }
 .car{
     display: none;
+}
+.zoom h4{
+    font-weight: 900;
+    font-size: 40px;
+}
+.foo p{
+    font-size: 20px;
+}
+.tr{
+    color:red;
+    font-weight: 900;
+    font-size: 60px;
+    font-family: fantasy;
+    font-style: italic;
+}
+.cont{
+    text-align: center;
 }

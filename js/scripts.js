@@ -108,7 +108,7 @@ function toppingsAdd(event) {
     var button = event.target
     var shopItem = button.parentElement.parentElement
     var title = shopItem.getElementsByClassName('titles')[0].innerText
-   // alert(title)
+    //alert(title)
     var price = shopItem.getElementsByClassName('priceHead')[0].innerText
     // alert(price)
     console.log(title, price)
@@ -122,6 +122,7 @@ function deliveryAddition(event) {
     var title = shopItem.getElementsByClassName('menuTitl')[0].innerText
     //alert(title+"Why!!")
     var price = shopItem.getElementsByClassName('defaultPrize')[0].innerText
+    //alert(price)
     console.log(title, price)
     addItemToCart3(title, price)
     updateCartTotal()
@@ -139,7 +140,7 @@ function addItemToCart3(title, price ) {
         }
     }
     var cartRowcontents = ` <div class="cart-item cart-column">
-    <img class="cart-item-image" src="images/vegOrder/veg6.jpg" width="100" height="100">
+    <img class="cart-item-image" src="images/delivery.png" width="100" height="100">
     <span class="cart-item-title">${title}</span>
     </div>
      <span class="cart-price cart-column">${price}</span>
@@ -171,7 +172,7 @@ function addItemToCart2(title, price ) {
     <img class="cart-item-image" src="images/vegOrder/veg6.jpg" width="100" height="100">
     <span class="cart-item-title">${title}</span>
     </div>
-     <span class="cart-price cart-column">${price||newPrice}</span>
+     <span class="cart-price cart-column">${price}</span>
      <div class="cart-quantity cart-column">
     <input class="cart-quantity-input" type="number" value="1">
     <button class="btn btn-danger" type="button">REMOVE</button>
